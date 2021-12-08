@@ -8,7 +8,6 @@ import "fmt"
 func Response(number rune) {
 	if VerifLetter(string(number)) == true {
 		fmt.Println("Bravo, vous avez trouvé une lettre !")
-		Victory()
 	} else {
 		fmt.Println("Dommage cette lettre n'est pas dans le mot.")
 		vie--
@@ -19,7 +18,8 @@ func Response(number rune) {
 	} else {
 		fmt.Println("Il vous reste :", vie, "vie")
 	}
+	PrintLetter()
+	Victory()
 	fmt.Println("-----------------------------------------------")
-	fmt.Println(hidewords)
 	Letter()
 }
