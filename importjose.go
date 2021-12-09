@@ -54,6 +54,7 @@ func position() []string {
 			return lines
 		} else if vie == 0 {
 			fmt.Println(lines[72:79])
+			fmt.Println("Le mot était :", words)
 			fmt.Println("GlaDoS : On dirai que mon intelligence artificielle est supérieur à la vôtre.")
 			os.Exit(0)
 		}
